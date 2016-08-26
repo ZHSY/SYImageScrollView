@@ -5,7 +5,7 @@
 //  Created by 夜雨 on 16/8/25.
 //  Copyright © 2016年 zhsy. All rights reserved.
 //
-
+/** (可能)因为模拟器cup处理能力的问题，同一个runloop下同时处理自动轮播和手滑scrollView 造成了轻微的颤抖，真机上效果较好 **/
 #import "ScrollConflictTestViewControll.h"
 
 

@@ -438,15 +438,10 @@
     }
     
     
-//    NSLog(@"left :%lu",((_currentAdIndex-1)%_imageArray.count));
-
     NSInteger index = _currentAdIndex - 1;
-
-    
     for (UIImageView *imageView in self.imageViews) {
         
-        NSInteger cur = (index?index:0)%_imageArray.count;
-        
+        NSInteger cur = (index<0)?_imageArray.count -1:index%_imageArray.count;
         [self replaceImageView:imageView withImageView:_imageArray[cur]];
         index++;
     }
