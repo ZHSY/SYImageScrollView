@@ -13,7 +13,6 @@
 		F20E70221D6FDCB7004F402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20E70211D6FDCB7004F402F /* Assets.xcassets */; };
 		F20E70251D6FDCB7004F402F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E70231D6FDCB7004F402F /* LaunchScreen.storyboard */; };
 		F20E70301D6FDCB7004F402F /* SYImageScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E702F1D6FDCB7004F402F /* SYImageScrollViewTests.m */; };
-		F20E703B1D6FDCB7004F402F /* SYImageScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E703A1D6FDCB7004F402F /* SYImageScrollViewUITests.m */; };
 		F20E709E1D6FDD0B004F402F /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70491D6FDD0B004F402F /* MainTestViewController.m */; };
 		F20E709F1D6FDD0B004F402F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E704B1D6FDD0B004F402F /* MainViewController.m */; };
 		F20E70A01D6FDD0B004F402F /* ScrollConflictTestViewControll.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E704D1D6FDD0B004F402F /* ScrollConflictTestViewControll.m */; };
@@ -64,13 +63,6 @@
 			remoteGlobalIDString = F20E70111D6FDCB7004F402F;
 			remoteInfo = SYImageScrollView;
 		};
-		F20E70371D6FDCB7004F402F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F20E700A1D6FDCB7004F402F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F20E70111D6FDCB7004F402F;
-			remoteInfo = SYImageScrollView;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -85,9 +77,6 @@
 		F20E702B1D6FDCB7004F402F /* SYImageScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYImageScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20E702F1D6FDCB7004F402F /* SYImageScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYImageScrollViewTests.m; sourceTree = "<group>"; };
 		F20E70311D6FDCB7004F402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F20E70361D6FDCB7004F402F /* SYImageScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYImageScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F20E703A1D6FDCB7004F402F /* SYImageScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYImageScrollViewUITests.m; sourceTree = "<group>"; };
-		F20E703C1D6FDCB7004F402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F20E70481D6FDD0B004F402F /* MainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTestViewController.h; sourceTree = "<group>"; };
 		F20E70491D6FDD0B004F402F /* MainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTestViewController.m; sourceTree = "<group>"; };
 		F20E704A1D6FDD0B004F402F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -187,13 +176,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F20E70331D6FDCB7004F402F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -202,7 +184,6 @@
 			children = (
 				F20E70141D6FDCB7004F402F /* SYImageScrollView */,
 				F20E702E1D6FDCB7004F402F /* SYImageScrollViewTests */,
-				F20E70391D6FDCB7004F402F /* SYImageScrollViewUITests */,
 				F20E70131D6FDCB7004F402F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -212,7 +193,6 @@
 			children = (
 				F20E70121D6FDCB7004F402F /* SYImageScrollView.app */,
 				F20E702B1D6FDCB7004F402F /* SYImageScrollViewTests.xctest */,
-				F20E70361D6FDCB7004F402F /* SYImageScrollViewUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,15 +234,6 @@
 				F20E70311D6FDCB7004F402F /* Info.plist */,
 			);
 			path = SYImageScrollViewTests;
-			sourceTree = "<group>";
-		};
-		F20E70391D6FDCB7004F402F /* SYImageScrollViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F20E703A1D6FDCB7004F402F /* SYImageScrollViewUITests.m */,
-				F20E703C1D6FDCB7004F402F /* Info.plist */,
-			);
-			path = SYImageScrollViewUITests;
 			sourceTree = "<group>";
 		};
 		F20E704E1D6FDD0B004F402F /* SYImageScrollView */ = {
@@ -441,24 +412,6 @@
 			productReference = F20E702B1D6FDCB7004F402F /* SYImageScrollViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F20E70351D6FDCB7004F402F /* SYImageScrollViewUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F20E70451D6FDCB7004F402F /* Build configuration list for PBXNativeTarget "SYImageScrollViewUITests" */;
-			buildPhases = (
-				F20E70321D6FDCB7004F402F /* Sources */,
-				F20E70331D6FDCB7004F402F /* Frameworks */,
-				F20E70341D6FDCB7004F402F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F20E70381D6FDCB7004F402F /* PBXTargetDependency */,
-			);
-			name = SYImageScrollViewUITests;
-			productName = SYImageScrollViewUITests;
-			productReference = F20E70361D6FDCB7004F402F /* SYImageScrollViewUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -473,10 +426,6 @@
 						DevelopmentTeam = XY52C3Z88U;
 					};
 					F20E702A1D6FDCB7004F402F = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = F20E70111D6FDCB7004F402F;
-					};
-					F20E70351D6FDCB7004F402F = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = F20E70111D6FDCB7004F402F;
 					};
@@ -497,7 +446,6 @@
 			targets = (
 				F20E70111D6FDCB7004F402F /* SYImageScrollView */,
 				F20E702A1D6FDCB7004F402F /* SYImageScrollViewTests */,
-				F20E70351D6FDCB7004F402F /* SYImageScrollViewUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -516,13 +464,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F20E70291D6FDCB7004F402F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F20E70341D6FDCB7004F402F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -587,14 +528,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F20E70321D6FDCB7004F402F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F20E703B1D6FDCB7004F402F /* SYImageScrollViewUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -602,11 +535,6 @@
 			isa = PBXTargetDependency;
 			target = F20E70111D6FDCB7004F402F /* SYImageScrollView */;
 			targetProxy = F20E702C1D6FDCB7004F402F /* PBXContainerItemProxy */;
-		};
-		F20E70381D6FDCB7004F402F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F20E70111D6FDCB7004F402F /* SYImageScrollView */;
-			targetProxy = F20E70371D6FDCB7004F402F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -758,30 +686,6 @@
 			};
 			name = Release;
 		};
-		F20E70461D6FDCB7004F402F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SYImageScrollViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhsy.SYImageScrollViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SYImageScrollView;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		F20E70471D6FDCB7004F402F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SYImageScrollViewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhsy.SYImageScrollViewUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SYImageScrollView;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -808,15 +712,6 @@
 			buildConfigurations = (
 				F20E70431D6FDCB7004F402F /* Debug */,
 				F20E70441D6FDCB7004F402F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F20E70451D6FDCB7004F402F /* Build configuration list for PBXNativeTarget "SYImageScrollViewUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F20E70461D6FDCB7004F402F /* Debug */,
-				F20E70471D6FDCB7004F402F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
