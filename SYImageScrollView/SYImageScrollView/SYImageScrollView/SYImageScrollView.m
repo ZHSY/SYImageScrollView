@@ -75,10 +75,14 @@
         
         [self creatContentView];
         
+        
         UIView *centerView = self.imageViews[1];
+        UITapGestureRecognizer  *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageSelected:)];
+        [centerView addGestureRecognizer:gesture];
+
         centerView.userInteractionEnabled = YES;
-        UIGestureRecognizer *gersture = [[UIGestureRecognizer alloc] initWithTarget:self action:@selector(imageSelected:)];
-        [centerView addGestureRecognizer:gersture];
+
+
         
         
     }
@@ -412,26 +416,20 @@
             _currentAdIndex =_imageArray.count;
         }
         _currentAdIndex = (_currentAdIndex-1)%_imageArray.count;
-
-        if (_pageShowStyle != SYImsViewPageShowStyleNone) {
-            _pageControl.currentPage = _currentAdIndex;
-        }
+       
     }
     else if(self.scrollView.contentOffset.x == BoundsWidth * 2)
     {
         _currentAdIndex = (_currentAdIndex+1)%_imageArray.count;
-
-        if (_pageShowStyle != SYImsViewPageShowStyleNone) {
-            _pageControl.currentPage = _currentAdIndex;
-        }
 
     }
     else
     {
         return;
     }
-    if (_currentAdIndex == 0) {
-        _currentAdIndex =_imageArray.count;
+    
+    if (_pageShowStyle != SYImsViewPageShowStyleNone) {
+            _pageControl.currentPage = _currentAdIndex;
     }
     
     if (self.titleStyle != SYImsViewTitleShowStyleNone) {
@@ -441,10 +439,15 @@
     
     
 //    NSLog(@"left :%lu",((_currentAdIndex-1)%_imageArray.count));
+
+    NSInteger index = _currentAdIndex - 1;
+
     
-    NSInteger index = _currentAdIndex-1;
     for (UIImageView *imageView in self.imageViews) {
-        [self replaceImageView:imageView withImageView:_imageArray[index%_imageArray.count]];
+        
+        NSInteger cur = (index?index:0)%_imageArray.count;
+        
+        [self replaceImageView:imageView withImageView:_imageArray[cur]];
         index++;
     }
     

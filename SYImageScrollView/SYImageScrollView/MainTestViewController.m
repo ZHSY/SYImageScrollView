@@ -141,6 +141,12 @@
 }
 
 
+- (void)syImsView:(SYImageScrollView *)imageScrollView selectedAdIndex:(NSInteger)index
+{
+    NSLog(@"点击图片index：%ld",(long)index);
+}
+
+
 
 #pragma mark - testAction
 
