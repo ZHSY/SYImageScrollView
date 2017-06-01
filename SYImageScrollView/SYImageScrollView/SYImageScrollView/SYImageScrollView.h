@@ -58,16 +58,18 @@ typedef NS_ENUM(NSUInteger, SYImsViewImageLoadMode)
 @property (nonatomic, strong, readonly)NSMutableArray *iteams;
 
 @property (nonatomic, assign)CGFloat                    timeInterval;//自动轮播的时间间隔 默认3.0s
-
+/** 页码小点的显示方式 默认SYImsViewPageShowStyleCenter **/
 @property (nonatomic, assign)SYImsViewPageShowStyle     pageShowStyle;
+/** 图片标题显示方式  默认不显示 **/
 @property (nonatomic, assign)SYImsViewTitleShowStyle    titleStyle;
+/** 图片加载方式 默认URL加载 **/
 @property (nonatomic, assign)SYImsViewImageLoadMode     imageLoadMode;
 
 
+/** 是否自动滚动广告 默认YES **/
+@property (nonatomic, assign)BOOL isAutoScroll;
 
-@property (nonatomic, assign)BOOL isAutoScroll;/** 是否自动滚动广告 **/
-
-
+/** 数据源 **/
 @property (nonatomic, assign)id <SYImageScrollViewDelegate>dataSource;
 
 /** 刷新数据 **/

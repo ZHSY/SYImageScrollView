@@ -55,7 +55,7 @@
     
     _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, kDWidth, kDHeight - 64)];
     _scrollView.backgroundColor = [UIColor lightGrayColor];
-    _scrollView.contentSize = CGSizeMake(kDWidth, kDHeight*1.5);
+    _scrollView.contentSize = CGSizeMake(kDWidth, kDHeight*2);
     _scrollView.delegate = self;
     [self.view addSubview:_scrollView];
     

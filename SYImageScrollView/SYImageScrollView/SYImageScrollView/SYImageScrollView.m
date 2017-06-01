@@ -50,7 +50,8 @@
     //GCD timer 的名字
     NSString *kTimerName;
     
-    //用于不确定滚动式由人导致的还是计时器到了,系统帮我们滚动的,YES,则为系统滚动,NO则为客户滚动(ps.在客户端中客户滚动一个广告后,这个广告的计时器要归0并重新计时)
+    //用于不确定滚动式由人导致的还是计时器到了,系统帮我们滚动的,YES,则为系统滚动,NO则为客户滚动
+    //(ps.在客户端中客户滚动一个广告后,这个广告的计时器要归0并重新计时)
     BOOL _isTimeUp;
 
     
@@ -65,8 +66,15 @@
         _imageArray = [[NSMutableArray alloc] init];
         _iteams = [[NSMutableArray alloc] init];
         _currentAdIndex = 0;
-        _timeInterval = DefaultTimeInterval;
         
+        
+        _timeInterval = DefaultTimeInterval;
+        /** 图片加载方式 默认URL加载 **/
+        _imageLoadMode = SYImsViewImageLoadModeDefault;
+        /** 是否自动滚动广告 默认YES**/
+        _isAutoScroll = YES;
+        /** 页码小点的显示方式 默认SYImsViewPageShowStyleCenter **/
+        _pageShowStyle = SYImsViewPageShowStyleCenter;
         /**
          *  因为TimerName 为内部属性不开放
          *  所以为避免多个控件被同时创建而引起timer管理冲突，此处取地址做name

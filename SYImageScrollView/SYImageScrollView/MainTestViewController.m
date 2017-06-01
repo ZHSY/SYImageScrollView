@@ -54,9 +54,13 @@
 - (void)creatUI
 {
     _imageScrollView = [[SYImageScrollView alloc] initWithFrame:CGRectMake(0, 64, kDWidth, 200)];
+    
+    /** 图片加载方式 默认URL加载 **/
     _imageScrollView.imageLoadMode = SYImsViewImageLoadModeURL;
+    /** 是否自动滚动广告 默认YES**/
     _imageScrollView.isAutoScroll = YES;
     _imageScrollView.dataSource = self;
+    /** 页码小点的显示方式 默认SYImsViewPageShowStyleCenter **/
     _imageScrollView.pageShowStyle = SYImsViewPageShowStyleCenter;
 
     
