@@ -16,7 +16,7 @@
 
 #define ImagesRequestUrl1 @"http://mapi.damai.cn/hot201303/nindex.aspx?channel_from=uc_market&source=10101&cityId=852&version=50503"
 
-#define ImagesRequestUrl2 @"http://mapi.damai.cn/hot201303/nindex.aspx?channel_from=uc_market&source=10101&cityId=0&version=50503"
+#define ImagesRequestUrl2 @"http://mapi.damai.cn/hot201303/nindex.aspx?channel_from=uc_market&source=10101&cityId=852&version=50503"
 
 @interface MainTestViewController()<SYImageScrollViewDelegate>
 @property (nonatomic, strong)NSMutableArray *images;
@@ -130,11 +130,11 @@
 
 #pragma mark - SYImageScrollViewDelegate
 
-- (NSArray<SYImageScrollIteam *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView
+- (NSArray<SYImageScrollItem *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView
 {
     NSMutableArray *iteams = [[NSMutableArray alloc] init];
     for (NSDictionary *dic in _images) {
-        SYImageScrollIteam *iteam = [[SYImageScrollIteam alloc] init];
+        SYImageScrollItem *iteam = [[SYImageScrollItem alloc] init];
         iteam.ImageUrl = dic[@"Pic"];
         iteam.ImageTitle = [NSString stringWithFormat:@"图片 Id：%@",dic[@"ProjectID"]];
         [iteams addObject:iteam];

@@ -23,7 +23,7 @@
 
 //默认配置
 #define CurrentPageColor    [UIColor orangeColor]//选中的pageControl颜色
-#define PlaceholderImage          [UIImage imageNamed:@"index_Default_pic"]
+#define PlaceholderImage          [UIImage imageNamed:@"zhanweifu"]
 
 #define DefaultTimeInterval 3.0 //默认的自动滚动的时间间隔
 
@@ -126,6 +126,11 @@
 }
 
 
+- (void)layoutSubviews
+{
+    [self reloadData];
+}
+
 - (void)creatContentView
 {
     _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
@@ -194,7 +199,7 @@
         _titleView.frame = frame;
         
         if (self.iteams.count > 0) {
-            SYImageScrollIteam *iteam = self.iteams[_currentAdIndex];
+            SYImageScrollItem *iteam = self.iteams[_currentAdIndex];
             _titleLabel.text = iteam.ImageTitle?iteam.ImageTitle:@"";
         }
         
@@ -244,17 +249,26 @@
         /** 获取图片元素 **/
         NSArray *iteams = [self.dataSource syImsViewIteams:self];
 
-        if (iteams.count<2) {
-            /** SYImageScrollView 不支持少于2张图片的设置 如有需要可在此处自行兼容 **/
-            NSLog(@"SYImageScrollView: 不支持少于2张图片的设置");
+        
+        if (iteams.count == 0) {
             return;
         }
+        
+        if (iteams.count<2) {
+            /** SYImageScrollView 不支持少于2张图片的设置 如有需要可在此处自行兼容 **/
+            _scrollView.scrollEnabled = NO;
+            //NSLog(@"SYImageScrollView: 不支持少于2张图片的设置");
+            //return;
+        }else{
+            _scrollView.scrollEnabled = YES;
+        }
+        
         [self.iteams removeAllObjects];
         [self.iteams addObjectsFromArray:iteams];
         
         [self.imageArray removeAllObjects];
         
-        for (SYImageScrollIteam *iteam in _iteams) {
+        for (SYImageScrollItem *iteam in _iteams) {
             UIImageView *imageView = [[UIImageView alloc] init];
             imageView.frame = self.bounds;
             
@@ -274,7 +288,7 @@
        
         //预设广告语
         if (self.titleStyle != SYImsViewTitleShowStyleNone) {
-            SYImageScrollIteam *iteam = _iteams[0];
+            SYImageScrollItem *iteam = _iteams[0];
             _titleLabel.text = iteam.ImageTitle?iteam.ImageTitle:@"";
         }
             
@@ -310,8 +324,11 @@
     if (self.imageArray.count< 2) {
         return;
     }
-    [self.scrollView setContentOffset:CGPointMake(BoundsWidth * 2, 0) animated:YES];
-    
+    //线程可能不是主线程来的
+    dispatch_main_sync_safe(^{
+        [self.scrollView setContentOffset:CGPointMake(BoundsWidth * 2, 0) animated:YES];
+    });
+
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -403,7 +420,7 @@
 
 - (void)refreshImageView
 {
-    if (!_imageArray.count>0) {
+    if (_imageArray.count == 0) {
         return;
     }
     
@@ -441,7 +458,7 @@
     }
     
     if (self.titleStyle != SYImsViewTitleShowStyleNone) {
-        SYImageScrollIteam *iteam = self.iteams[_currentAdIndex];
+        SYImageScrollItem *iteam = self.iteams[_currentAdIndex];
         _titleLabel.text = iteam.ImageTitle?iteam.ImageTitle:@"";
     }
     

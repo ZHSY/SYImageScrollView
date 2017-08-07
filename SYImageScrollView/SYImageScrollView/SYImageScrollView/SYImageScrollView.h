@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "SYImageScrollIteam.h"
+#import "SYImageScrollItem.h"
 
 /** 页码小点的显示方式 **/
 typedef NS_ENUM(NSUInteger, SYImsViewPageShowStyle)
 {
-    SYImsViewPageShowStyleNone,//default 不显示
+    SYImsViewPageShowStyleNone  = 0,// 不显示
     SYImsViewPageShowStyleLeft,
-    SYImsViewPageShowStyleCenter,
+    SYImsViewPageShowStyleCenter,//default 不显示
     SYImsViewPageShowStyleRight,
 };
 
@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, SYImsViewImageLoadMode)
 
 @protocol  SYImageScrollViewDelegate <NSObject>
 
-- (NSArray<SYImageScrollIteam *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView;
+- (NSArray<SYImageScrollItem *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView;
 
 @optional
 

@@ -6,6 +6,8 @@
 //  Copyright © 2016年 zhsy. All rights reserved.
 //
 
+/** 本控件参考了 JX_GCDTimerManager：https://github.com/Joeyqiushi/JX_GCDTimer   **/
+
 #import "SYTimerManager.h"
 
 
@@ -17,6 +19,7 @@
 @end
 
 @implementation SYTimerManager
+
 
 +(instancetype)sharedManager
 {
@@ -60,8 +63,8 @@
         dispatch_resume(timer);
         [self.timerContainer setObject:timer forKey:timerName];
     }
-    
-    dispatch_source_set_timer(timer, dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC), interval * NSEC_PER_SEC, 0.1*NSEC_PER_SEC);
+     /* timer精度为0.1秒  不知道为什么设了一个启动延迟 所以设为0了*/
+    dispatch_source_set_timer(timer, dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC), interval * NSEC_PER_SEC, 0);//0.1*NSEC_PER_SEC
     
     __weak typeof(self) weakSelf = self;
     dispatch_source_set_event_handler(timer, ^{

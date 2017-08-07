@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8968B61F383AFD00297475 /* SYImageScrollItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8968B51F383AFD00297475 /* SYImageScrollItem.m */; };
+		BD8968B91F383BD800297475 /* SYTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8968B81F383BD800297475 /* SYTimerManager.m */; };
 		F20E70171D6FDCB7004F402F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70161D6FDCB7004F402F /* main.m */; };
 		F20E701A1D6FDCB7004F402F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70191D6FDCB7004F402F /* AppDelegate.m */; };
 		F20E70201D6FDCB7004F402F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20E701E1D6FDCB7004F402F /* Main.storyboard */; };
@@ -16,9 +18,7 @@
 		F20E709E1D6FDD0B004F402F /* MainTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70491D6FDD0B004F402F /* MainTestViewController.m */; };
 		F20E709F1D6FDD0B004F402F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E704B1D6FDD0B004F402F /* MainViewController.m */; };
 		F20E70A01D6FDD0B004F402F /* ScrollConflictTestViewControll.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E704D1D6FDD0B004F402F /* ScrollConflictTestViewControll.m */; };
-		F20E70A11D6FDD0B004F402F /* SYImageScrollIteam.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70501D6FDD0B004F402F /* SYImageScrollIteam.m */; };
 		F20E70A21D6FDD0B004F402F /* SYImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70521D6FDD0B004F402F /* SYImageScrollView.m */; };
-		F20E70A31D6FDD0B004F402F /* SYTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70541D6FDD0B004F402F /* SYTimerManager.m */; };
 		F20E70A41D6FDD0B004F402F /* UIView+SYExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E70561D6FDD0B004F402F /* UIView+SYExtend.m */; };
 		F20E70A51D6FDD0B004F402F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E705B1D6FDD0B004F402F /* AFHTTPSessionManager.m */; };
 		F20E70A61D6FDD0B004F402F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F20E705E1D6FDD0B004F402F /* AFNetworkReachabilityManager.m */; };
@@ -66,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD8968B41F383AFD00297475 /* SYImageScrollItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImageScrollItem.h; sourceTree = "<group>"; };
+		BD8968B51F383AFD00297475 /* SYImageScrollItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImageScrollItem.m; sourceTree = "<group>"; };
+		BD8968B71F383BD800297475 /* SYTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTimerManager.h; sourceTree = "<group>"; };
+		BD8968B81F383BD800297475 /* SYTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTimerManager.m; sourceTree = "<group>"; };
 		F20E70121D6FDCB7004F402F /* SYImageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYImageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20E70161D6FDCB7004F402F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F20E70181D6FDCB7004F402F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,12 +87,8 @@
 		F20E704B1D6FDD0B004F402F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F20E704C1D6FDD0B004F402F /* ScrollConflictTestViewControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollConflictTestViewControll.h; sourceTree = "<group>"; };
 		F20E704D1D6FDD0B004F402F /* ScrollConflictTestViewControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollConflictTestViewControll.m; sourceTree = "<group>"; };
-		F20E704F1D6FDD0B004F402F /* SYImageScrollIteam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImageScrollIteam.h; sourceTree = "<group>"; };
-		F20E70501D6FDD0B004F402F /* SYImageScrollIteam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImageScrollIteam.m; sourceTree = "<group>"; };
 		F20E70511D6FDD0B004F402F /* SYImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYImageScrollView.h; sourceTree = "<group>"; };
 		F20E70521D6FDD0B004F402F /* SYImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYImageScrollView.m; sourceTree = "<group>"; };
-		F20E70531D6FDD0B004F402F /* SYTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SYTimerManager.h; path = ../SYTimerManager.h; sourceTree = "<group>"; };
-		F20E70541D6FDD0B004F402F /* SYTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SYTimerManager.m; path = ../SYTimerManager.m; sourceTree = "<group>"; };
 		F20E70551D6FDD0B004F402F /* UIView+SYExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SYExtend.h"; sourceTree = "<group>"; };
 		F20E70561D6FDD0B004F402F /* UIView+SYExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SYExtend.m"; sourceTree = "<group>"; };
 		F20E705A1D6FDD0B004F402F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
@@ -202,10 +202,10 @@
 			children = (
 				F20E70181D6FDCB7004F402F /* AppDelegate.h */,
 				F20E70191D6FDCB7004F402F /* AppDelegate.m */,
-				F20E70481D6FDD0B004F402F /* MainTestViewController.h */,
-				F20E70491D6FDD0B004F402F /* MainTestViewController.m */,
 				F20E704A1D6FDD0B004F402F /* MainViewController.h */,
 				F20E704B1D6FDD0B004F402F /* MainViewController.m */,
+				F20E70481D6FDD0B004F402F /* MainTestViewController.h */,
+				F20E70491D6FDD0B004F402F /* MainTestViewController.m */,
 				F20E704C1D6FDD0B004F402F /* ScrollConflictTestViewControll.h */,
 				F20E704D1D6FDD0B004F402F /* ScrollConflictTestViewControll.m */,
 				F20E704E1D6FDD0B004F402F /* SYImageScrollView */,
@@ -239,12 +239,12 @@
 		F20E704E1D6FDD0B004F402F /* SYImageScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				F20E704F1D6FDD0B004F402F /* SYImageScrollIteam.h */,
-				F20E70501D6FDD0B004F402F /* SYImageScrollIteam.m */,
+				BD8968B41F383AFD00297475 /* SYImageScrollItem.h */,
+				BD8968B51F383AFD00297475 /* SYImageScrollItem.m */,
 				F20E70511D6FDD0B004F402F /* SYImageScrollView.h */,
 				F20E70521D6FDD0B004F402F /* SYImageScrollView.m */,
-				F20E70531D6FDD0B004F402F /* SYTimerManager.h */,
-				F20E70541D6FDD0B004F402F /* SYTimerManager.m */,
+				BD8968B71F383BD800297475 /* SYTimerManager.h */,
+				BD8968B81F383BD800297475 /* SYTimerManager.m */,
 			);
 			path = SYImageScrollView;
 			sourceTree = "<group>";
@@ -478,7 +478,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20E70C31D6FDD0C004F402F /* UIView+WebCacheOperation.m in Sources */,
-				F20E70A11D6FDD0B004F402F /* SYImageScrollIteam.m in Sources */,
 				F20E70C21D6FDD0C004F402F /* UIImageView+WebCache.m in Sources */,
 				F20E70B21D6FDD0B004F402F /* UIRefreshControl+AFNetworking.m in Sources */,
 				F20E70AF1D6FDD0B004F402F /* UIButton+AFNetworking.m in Sources */,
@@ -493,6 +492,7 @@
 				F20E70C11D6FDD0C004F402F /* UIImageView+HighlightedWebCache.m in Sources */,
 				F20E70AE1D6FDD0B004F402F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F20E70A91D6FDD0B004F402F /* AFURLResponseSerialization.m in Sources */,
+				BD8968B61F383AFD00297475 /* SYImageScrollItem.m in Sources */,
 				F20E70BB1D6FDD0C004F402F /* SDWebImageManager.m in Sources */,
 				F20E70B01D6FDD0B004F402F /* UIImageView+AFNetworking.m in Sources */,
 				F20E709F1D6FDD0B004F402F /* MainViewController.m in Sources */,
@@ -502,6 +502,7 @@
 				F20E70A01D6FDD0B004F402F /* ScrollConflictTestViewControll.m in Sources */,
 				F20E70AA1D6FDD0B004F402F /* AFURLSessionManager.m in Sources */,
 				F20E70BF1D6FDD0C004F402F /* UIImage+MultiFormat.m in Sources */,
+				BD8968B91F383BD800297475 /* SYTimerManager.m in Sources */,
 				F20E70BA1D6FDD0C004F402F /* SDWebImageDownloaderOperation.m in Sources */,
 				F20E70AC1D6FDD0B004F402F /* AFImageDownloader.m in Sources */,
 				F20E70A41D6FDD0B004F402F /* UIView+SYExtend.m in Sources */,
@@ -515,7 +516,6 @@
 				F20E70B91D6FDD0C004F402F /* SDWebImageDownloader.m in Sources */,
 				F20E70B41D6FDD0B004F402F /* MKAnnotationView+WebCache.m in Sources */,
 				F20E70A61D6FDD0B004F402F /* AFNetworkReachabilityManager.m in Sources */,
-				F20E70A31D6FDD0B004F402F /* SYTimerManager.m in Sources */,
 				F20E70B61D6FDD0B004F402F /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  SYImageScrollIteam.h
+//  SYImageScrollItem.h
 //  SYIMageScrollView
 //
 //  Created by 夜雨 on 16/8/25.
@@ -10,7 +10,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYImageScrollIteam : NSObject
+@interface SYImageScrollItem : NSObject
 
 /**
  *  三选一个设置项
@@ -21,5 +21,9 @@
 
 
 @property (nonatomic, strong)NSString *ImageTitle;
+
+//爱我车附加属性
+@property (nonatomic, strong)NSString *title;
+@property (nonatomic, strong)NSString *url;
 
 @end

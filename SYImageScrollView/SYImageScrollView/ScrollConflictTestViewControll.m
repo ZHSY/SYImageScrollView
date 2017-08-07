@@ -104,16 +104,15 @@
     
     NSLog(@"imageScrollView显示：%d",isInView);
 
-
 }
 
 #pragma mark - SYImageScrollViewDelegate
 
-- (NSArray<SYImageScrollIteam *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView
+- (NSArray<SYImageScrollItem *> *)syImsViewIteams:(SYImageScrollView *)imageScrollView
 {
     NSMutableArray *iteams = [[NSMutableArray alloc] init];
     for (NSDictionary *dic in _images) {
-        SYImageScrollIteam *iteam = [[SYImageScrollIteam alloc] init];
+        SYImageScrollItem *iteam = [[SYImageScrollItem alloc] init];
         iteam.ImageUrl = dic[@"Pic"];
         iteam.ImageTitle = [NSString stringWithFormat:@"图片 Id：%@",dic[@"ProjectID"]];
         [iteams addObject:iteam];
