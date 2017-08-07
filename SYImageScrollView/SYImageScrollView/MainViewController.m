@@ -19,7 +19,7 @@
     
     UIButton *testButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 150, 200, 30)];
     [testButton setTitle:@"测试" forState:UIControlStateNormal];
-    
+    testButton.center = CGPointMake(self.view.frame.size.width/2, testButton.center.y);
     testButton.backgroundColor = [UIColor orangeColor];
     
     [testButton addTarget:self action:@selector(testBtnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -31,7 +31,7 @@
     
     UIButton *testButton2 = [[UIButton alloc] initWithFrame:CGRectMake(100, 250, 200, 30)];
     [testButton2 setTitle:@"滑动冲突测试" forState:UIControlStateNormal];
-    
+    testButton2.center = CGPointMake(self.view.frame.size.width/2, testButton2.center.y);
     testButton2.backgroundColor = [UIColor orangeColor];
     
     [testButton2 addTarget:self action:@selector(testBtn2Click) forControlEvents:UIControlEventTouchUpInside];
